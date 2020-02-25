@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="container">
+    {% for waifu in waifus %}
+    <div class="box">
+        <p><a href="/{{ waifu.key }}">{{ waifu.key }}</a></p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
